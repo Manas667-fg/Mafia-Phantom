@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Site officiel de la Mafia Phatom" />
+  <title>Mafia Phatom</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="intro" class="intro" aria-label="Animation d'introduction">
+    <div class="noise"></div>
+    <div class="intro-content">
+      <img src="logo-phantom.png" alt="Logo Phantom" class="intro-logo glitch-logo" />
+      <p class="loading-label">INITIALIZING...</p>
+      <div class="loading-track"><div class="loading-bar"></div></div>
+      <button id="skipIntro" class="skip-button" type="button">PASSER</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#accueil" data-page="accueil">
+      <img src="logo-phantom.png" alt="Logo Phantom" />
+      <span>MAFIA PHATOM</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="main-nav" aria-label="Navigation principale">
+      <button class="nav-link active" data-page="accueil">Accueil</button>
+      <button class="nav-link" data-page="reglement">Règlement</button>
+      <a class="nav-link external-link" href="https://reglement.diamondcity.fr/ill%C3%A9gal" target="_blank" rel="noopener noreferrer">Règlement Diamond ↗</a>
+      <button class="nav-link" data-page="background">Background</button>
+      <button class="nav-link" data-page="equipe">Équipe</button>
+      <button class="nav-link" data-page="business">Business</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="page active-page hero-page">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Organisation • Discipline • Loyauté</p>
+        <h1>MAFIA <span>PHATOM</span></h1>
+        <p class="hero-quote">La Phantom n’existe pas pour être vue.<br />Elle existe pour être ressentie.</p>
+        <button class="primary-button" data-page="background">Découvrir notre histoire</button>
+      </div>
+    </section>
+
+    <section id="reglement" class="page content-page">
+      <div class="page-heading">
+        <p class="eyebrow">Code interne</p>
+        <h2>🩸 RÈGLEMENT OFFICIEL DE LA PHANTOM</h2>
+      </div>
+
+      <div class="external-rule-box">
+        <p>Consulte aussi le règlement illégal officiel de Diamond City.</p>
+        <a href="https://reglement.diamondcity.fr/ill%C3%A9gal" target="_blank" rel="noopener noreferrer">Ouvrir le règlement Diamond City ↗</a>
+      </div>
+
+      <div class="rules-grid">
+        <article class="panel">
+          <h3>👑 I. Valeurs fondamentales</h3>
+          <h4>Respect & Loyauté</h4>
+          <p>Le Chef de la Phantom est l’autorité absolue. Sa parole ne se discute pas. Elle s’exécute.</p>
+          <p>La loyauté envers la famille est une règle de vie. Le moindre manque de respect ou signe d’insubordination sera corrigé sévèrement.</p>
+        </article>
+
+        <article class="panel">
+          <h3>🤐 II. Discrétion & Secret</h3>
+          <p>Ce qui concerne la famille reste dans la famille.</p>
+          <p>Aucune information ne doit sortir. Parler, c’est trahir.</p>
+        </article>
+
+        <article class="panel">
+          <h3>⚔️ III. Obéissance</h3>
+          <p>Chaque opération est dirigée par le Chef de la Phantom ou son représentant.</p>
+          <p>Les ordres doivent être suivis immédiatement et sans discussion.</p>
+        </article>
+
+        <article class="panel">
+          <h3>🎩 IV. Comportement</h3>
+          <p>Vous représentez la famille à chaque instant.</p>
+          <ul>
+            <li>Attitude sérieuse exigée</li>
+            <li>Aucun comportement ridicule ou inutile</li>
+            <li>Les erreurs se paient… ou se corrigent rapidement</li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <h3>🩸 V. Engagement</h3>
+          <p>Entrer dans la famille n’est pas un jeu.</p>
+          <p>Cela signifie :</p>
+          <ul>
+            <li>Mettre la famille au-dessus de tout</li>
+            <li>Être actif, fiable et discipliné</li>
+            <li>Ne jamais abandonner ses frères</li>
+          </ul>
+          <p class="warning">Une fois dedans… il n’y a qu’une seule sortie.</p>
+        </article>
+
+        <article class="panel">
+          <h3>⚖️ VI. Obligations quotidiennes</h3>
+          <ul>
+            <li>Quota obligatoire tous les jours</li>
+            <li>Présence Discord obligatoire : réponse au message quotidien</li>
+            <li>Fleeca : tous les jours</li>
+            <li>Bijouterie : dès que possible, idéalement quotidiennement</li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <h3>🚨 VII. Sanctions</h3>
+          <p><strong>2 jours sans quotas, sans prévenir :</strong><br />→ 1er avertissement</p>
+          <p><strong>Aucune amélioration après avertissement :</strong><br />→ Sanction immédiate<br />→ Exclusion ou Mort RP</p>
+          <p>En cas de renvoi ou de Mort RP, tout le matériel fourni par la famille doit être rendu immédiatement.</p>
+        </article>
+
+        <article class="panel danger-panel">
+          <h3>☠️ VIII. Trahison</h3>
+          <p>La trahison n’est pas pardonnée.</p>
+          <p>Elle n’est pas discutée.</p>
+          <p class="danger-text">→ Mort RP immédiate</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="background" class="page content-page">
+      <div class="page-heading">
+        <p class="eyebrow">Nos origines</p>
+        <h2>BACKGROUND</h2>
+      </div>
+
+      <div class="story-layout">
+        <article class="panel story-panel">
+          <p class="lead">On ne sait pas exactement d’où ils viennent.<br />C’est comme ça que tout commence.</p>
+
+          <p>Deux frères polonais, arrivés sans bruit, sans passé officiel, sans histoire qu’on peut vérifier. Juste des rumeurs. Certains parlent d’Europe de l’Est, d’un environnement dur, structuré, où l’erreur ne pardonne pas. D’autres disent qu’ils ont appris à travailler dans l’ombre, là où la discrétion vaut plus que la force.</p>
+
+          <p>Quand ils arrivent en ville, ils ne cherchent pas à se faire une place. Ils regardent. Ils prennent le temps. Ils observent les dynamiques, les groupes, les habitudes. Et ils comprennent vite quelque chose que beaucoup oublient : ici, tout le monde parle, mais peu de gens font vraiment attention.</p>
+
+          <p>Alors ils construisent différemment.</p>
+
+          <p>Pas une grosse structure. Pas un groupe qui fait du bruit pour exister. Quelque chose de plus fermé, plus propre, plus contrôlé. Une organisation où chaque personne compte, où la discipline n’est pas une option, et où la loyauté n’est pas négociable.</p>
+
+          <p>La Phantom ne cherche pas à s’imposer par la force ou la visibilité. Leur force, c’est leur façon de faire. Observer, comprendre, puis agir. Toujours dans cet ordre. Ils prennent leur temps, mais quand ils passent à l’action, c’est rapide, précis, et sans bavure.</p>
+
+          <p>Au début, personne ne les remarque vraiment. Puis petit à petit, certaines situations tournent étrangement. Des gens changent de comportement. D’autres disparaissent des conversations, ou des affaires. Rien de spectaculaire. Juste assez pour créer un doute.</p>
+
+          <p>Et c’est là que leur vraie présence commence.</p>
+
+          <p>Ils ne revendiquent rien. Ils ne s’affichent pas. Mais ceux qui sont attentifs commencent à comprendre qu’il y a quelque chose derrière. Une organisation discrète, mais structurée. Silencieuse, mais constante.</p>
+
+          <p>Avec le temps, une réputation s’installe. Pas basée sur la peur gratuite, mais sur la rigueur, la constance, et le fait que quand quelque chose se passe… ce n’est jamais un hasard.</p>
+
+          <blockquote>
+            La Phantom n’existe pas pour être vue.<br />
+            Elle existe pour être ressentie.
+          </blockquote>
+
+          <p class="closing-line">On ne cherche pas à exister.<br />On s’assure que les autres n’oublient pas.</p>
+        </article>
+
+        <aside class="background-visual-card">
+          <img class="background-visual-image" src="background-phantom.png" alt="Photo de groupe de la Phantom utilisée pour le background" />
+          <div class="background-visual-caption">
+            <span>LA PHANTOM</span>
+            <small>Vue d’ensemble de la famille</small>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="equipe" class="page content-page">
+      <div class="page-heading">
+        <p class="eyebrow">Hiérarchie</p>
+        <h2>ÉQUIPE</h2>
+      </div>
+
+      <p class="section-intro">Les hauts gradés de la Phantom.</p>
+
+      <div class="team-grid team-grid-two">
+        <article class="member-card">
+          <img class="member-photo-image" src="adam-wolkowicz.png" alt="Adam Wolkowicz, chef de la Phantom" />
+          <div class="member-info">
+            <p class="member-rank">Chef de la Phantom</p>
+            <h3>Adam Wolkowicz</h3>
+            <p class="member-description">Le mystère inspire le respect. Vision, discipline, loyauté et excellence.</p>
+          </div>
+        </article>
+
+        <article class="member-card">
+          <img class="member-photo-image" src="bartek-wolkowicz.png" alt="Bartek Wolkowicz, co-lead et bras droit de la Phantom" />
+          <div class="member-info">
+            <p class="member-rank">Co-Lead • Bras droit</p>
+            <h3>Bartek Wolkowicz</h3>
+            <p class="member-description">Bartek, impitoyable. Il exécute les ordres sans poser de questions.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="business" class="page content-page">
+      <div class="page-heading">
+        <p class="eyebrow">Activités</p>
+        <h2>BUSINESS</h2>
+      </div>
+
+      <div class="business-grid">
+        <article class="panel business-card">
+          <img class="business-image-file" src="quotas-phantom.png" alt="Rappel des quotas journaliers de la Phantom" />
+          <div class="business-content">
+            <h3>Quotas journaliers</h3>
+            <p>Chaque membre doit respecter les objectifs quotidiens fixés par la famille.</p>
+            <ul class="quota-list">
+              <li><strong>Conteneurs :</strong> 10 par jour</li>
+              <li><strong>Hack ATM :</strong> 3 par jour</li>
+              <li><strong>Supérettes :</strong> 2 par jour, si possible</li>
+            </ul>
+            <p class="business-warning">Pas de quotas, pas de respect. La Phantom ne pardonne pas.</p>
+          </div>
+        </article>
+
+        <article class="panel business-card">
+          <img class="business-image-file" src="recel-phantom.png" alt="Prix de rachat et recel de la Phantom" />
+          <div class="business-content">
+            <h3>Recel</h3>
+            <p>La grille de rachat officielle de la Phantom est affichée ci-dessus.</p>
+            <ul class="quota-list">
+              <li><strong>Bijoux</strong>, <strong>pierres précieuses</strong> et <strong>objets divers</strong> selon la grille affichée</li>
+              <li><strong>Alcool / cigarette contrebande :</strong> 50 $</li>
+            </ul>
+            <p class="business-warning">Des prix justes. Des affaires propres.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="logo-phantom.png" alt="" />
+    <p>© 2026 Mafia Phatom — Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
