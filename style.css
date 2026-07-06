@@ -424,7 +424,7 @@ blockquote {
 
 .business-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
-.business-card { padding: 0 0 24px; }
+.business-card { padding: 0 0 24px; overflow: hidden; }
 
 .business-card h3,
 .business-card p {
@@ -598,9 +598,11 @@ footer img {
 .business-image-file {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  object-position: center top;
+  background: #050505;
   border-bottom: 1px solid #333;
 }
 
