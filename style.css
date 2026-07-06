@@ -720,3 +720,182 @@ footer img {
     min-height: 320px;
   }
 }
+
+
+/* Hiérarchie Phantom */
+.hierarchy-page {
+  max-width: 1280px;
+}
+
+.hierarchy-intro {
+  max-width: 760px;
+  margin-bottom: 56px;
+  line-height: 1.8;
+}
+
+.rank-section {
+  margin: 0 0 76px;
+}
+
+.rank-heading {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.rank-heading > span {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #6f531f);
+}
+
+.rank-heading > span:last-child {
+  background: linear-gradient(90deg, #6f531f, transparent);
+}
+
+.rank-heading p {
+  margin: 0 0 6px;
+  color: #7f6735;
+  text-transform: uppercase;
+  letter-spacing: .28em;
+  font-size: .68rem;
+}
+
+.rank-heading h3 {
+  margin: 0;
+  color: #d1a95b;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  letter-spacing: .16em;
+}
+
+.hierarchy-grid {
+  display: grid;
+  gap: 24px;
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+.hierarchy-grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hierarchy-grid-single {
+  grid-template-columns: minmax(0, 540px);
+  justify-content: center;
+}
+
+.hierarchy-card {
+  overflow: hidden;
+  border: 1px solid #3a2c14;
+  background: #080808;
+  box-shadow: 0 22px 55px rgba(0,0,0,.34);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+
+.hierarchy-card:hover {
+  transform: translateY(-5px);
+  border-color: #8d6a28;
+  box-shadow: 0 28px 70px rgba(0,0,0,.52);
+}
+
+.hierarchy-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  border-bottom: 1px solid #3a2c14;
+}
+
+.hierarchy-card-info {
+  padding: 22px 24px 26px;
+  text-align: center;
+  background:
+    linear-gradient(180deg, rgba(146,103,29,.10), transparent 62%),
+    #090909;
+}
+
+.hierarchy-role {
+  margin: 0 0 7px !important;
+  color: #947436 !important;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-size: .72rem;
+}
+
+.hierarchy-card h4 {
+  margin: 0 0 12px;
+  color: #d8b367;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.65rem;
+  letter-spacing: .07em;
+}
+
+.hierarchy-card-info > p:last-child {
+  margin: 0;
+  color: #aaa;
+  line-height: 1.65;
+}
+
+.rank-ghost {
+  border-color: #8a6623;
+}
+
+.hierarchy-card-placeholder {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.placeholder-emblem {
+  display: grid;
+  min-height: 520px;
+  place-items: center;
+  background:
+    radial-gradient(circle, rgba(145,104,34,.16), transparent 44%),
+    url("logo-phantom.png") center / 72% no-repeat,
+    #050505;
+  color: rgba(211,171,91,.86);
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  letter-spacing: .22em;
+  text-shadow: 0 0 30px rgba(151,108,31,.3);
+}
+
+@media (max-width: 820px) {
+  .hierarchy-grid-two {
+    grid-template-columns: 1fr;
+  }
+
+  .rank-heading {
+    grid-template-columns: minmax(25px, 1fr) auto minmax(25px, 1fr);
+    gap: 12px;
+  }
+
+  .placeholder-emblem {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 520px) {
+  .rank-section {
+    margin-bottom: 56px;
+  }
+
+  .rank-heading h3 {
+    font-size: 1.55rem;
+    letter-spacing: .1em;
+  }
+
+  .rank-heading p {
+    letter-spacing: .16em;
+  }
+
+  .hierarchy-card-info {
+    padding: 18px 18px 22px;
+  }
+}
